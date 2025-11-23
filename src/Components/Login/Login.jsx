@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import { Form, Input, Button, Checkbox, Typography, message, Avatar } from "antd";
 import { MailOutlined, LockOutlined, UserOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
@@ -82,7 +82,7 @@ export default function Login() {
           <div className="login-links">
             <a href="/login">Forgot password?</a>
             <span> | </span>
-            <a href="/register">Register</a>
+            <Link to="/register">Register</Link>
           </div>
         </Form>
       </div>
