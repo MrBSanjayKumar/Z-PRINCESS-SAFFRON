@@ -19,8 +19,8 @@ const Home = () => {
         <video className="bg-video" src={video} autoPlay loop muted playsInline />
 
         <div className="home-content">
-          <Title style={{fontSize: "80px", color: "#fff", marginBottom: 0 }}>Z PRINCESS SAFFRON</Title>
-          <Paragraph style={{ fontSize: "30px" , color: "#eee", maxWidth: 520, margin: "0 auto", fontFamily: "-apple-system" }}>
+          <Title className="hero-title" style={{fontSize: "80px", color: "#fff", marginBottom: 0 }}>Z PRINCESS SAFFRON</Title>
+          <Paragraph className="hero-title" style={{ fontSize: "30px" , color: "#eee", maxWidth: 520, margin: "0 auto", fontFamily: "-apple-system" }}>
             World's Finest Saffron
           </Paragraph>
            <Button type="primary" size="large"
@@ -42,7 +42,7 @@ const Home = () => {
       </div>
       <div className='home1'>
          <div className="home-content">
-          <Title style={{fontSize: "80px", color: "#fff", marginBottom: 0 }}>OUR PRODUCTS</Title>
+          <Title className="hero1-title" style={{fontSize: "80px", color: "#fff", marginBottom: 0 }}>OUR PRODUCTS</Title>
           <Button type="primary" size="large"
               style={{
               marginTop: "25px",
