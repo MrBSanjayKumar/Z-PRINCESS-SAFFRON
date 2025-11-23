@@ -31,7 +31,7 @@ export default function Register() {
       <div className="register-card">
         <Avatar size={84} icon={<UserOutlined />} className="register-avatar" />
 
-        <Title level={3} className="register-title">CUSTOMER REGISTER</Title>
+        <Title style={{color: "#fff"}} level={3} className="register-title">CUSTOMER REGISTER</Title>
 
         <Form
           form={form}

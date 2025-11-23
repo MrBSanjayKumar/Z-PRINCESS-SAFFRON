@@ -4,6 +4,7 @@ import { MailOutlined, LockOutlined, UserOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
 import video from "../Login/backvideo-C_O02uC7.mp4"; // keep your mp4 import
+import { color } from "framer-motion";
 
 const { Title } = Typography;
 
@@ -37,7 +38,7 @@ export default function Login() {
 
         <Avatar size={80} icon={<UserOutlined />} className="login-avatar" />
 
-        <Title level={3} className="login-title">Sign In</Title>
+        <Title style={{color: "#fff"}} level={3} className="login-title">Sign In</Title>
 
         <Form
           form={form}
