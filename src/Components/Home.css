@@ -209,7 +209,10 @@
   .newsletter-heading { font-size: 26px; }
   .service-col { text-align: center; }
   .service-desc { margin: 12px auto 0; max-width: 100%; }
-  .subscribe-input { width: 70vw; }
+   .subscribe-input {
+    width: 100%;
+    max-width: 70vw;
+  }
 }
 
 /* Container */
