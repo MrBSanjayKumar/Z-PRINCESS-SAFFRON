@@ -1,4 +1,3 @@
-/* Login.css - glass card over video background */
 
 :root {
   --card-width: 420px;
@@ -6,7 +5,7 @@
   --card-radius: 14px;
 }
 
-/* full viewport */
+
 .login-page {
   position: relative;
   width: 100%;
@@ -18,7 +17,7 @@
   font-family: Inter, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* background video covering full screen */
+/* background video */
 .login-bg-video {
   position: absolute;
   inset: 0;
@@ -28,7 +27,7 @@
   z-index: 0;
 }
 
-/* overlay to improve text contrast */
+
 .login-overlay {
   position: absolute;
   inset: 0;
@@ -36,7 +35,7 @@
   z-index: 1;
 }
 
-/* card centered above video + overlay */
+/* card centered */
 .login-card {
   position: relative;
   z-index: 2;

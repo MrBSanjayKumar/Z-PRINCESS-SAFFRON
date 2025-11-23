@@ -1,4 +1,4 @@
-/* Register.css - glass card over video background */
+
 
 .register-page {
   position: relative;
@@ -21,7 +21,7 @@
   z-index: 0;
 }
 
-/* overlay for readability */
+/* overlay */
 .register-overlay {
   position: absolute;
   inset: 0;

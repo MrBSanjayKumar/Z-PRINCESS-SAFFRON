@@ -1,4 +1,4 @@
-/* simple container helper */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -11,7 +11,7 @@
   color: #222;
 }
 
-/* top intro area */
+
 .insight-top {
   padding: 28px 0 40px;
   text-align: center;
@@ -38,9 +38,9 @@
   line-height: 1.7;
 }
 
-/* pale green band that contains the cards (matches screenshot) */
+
 .insight-cards-band {
-  background: #bcdad6; /* pale aquamarine like screenshot */
+  background: #bcdad6; 
   padding: 30px 0 48px;
 }
 
@@ -53,7 +53,7 @@
   box-shadow: none;
 }
 
-/* image wrapper keeps fixed aspect and rounded corners */
+
 .card-image-wrapper {
   height: 180px;
   overflow: hidden;
@@ -69,7 +69,7 @@
   transform-origin: center;
 }
 
-/* Card content below image */
+
 .card-content {
   text-align: center;
   padding: 6px 4px 0;
@@ -89,7 +89,7 @@
   padding: 0 8px 16px;
 }
 
-/* Lower text sections */
+
 .insight-lower {
   padding: 60px 0;
   text-align: center;
@@ -109,7 +109,7 @@
   line-height: 1.8;
 }
 
-/* Responsive tweaks */
+/* Responsive*/
 @media (max-width: 768px) {
   .card-image-wrapper { height: 160px; }
   .insight-heading { font-size: 22px; }

@@ -1,7 +1,7 @@
 import { Row, Col, Card, Typography, Button } from "antd";
 import { PlayCircleOutlined } from "@ant-design/icons";
-import video from "../assets/v4-BTT1jpwy.mp4"; // your video
-import heroImg from "../assets/w.jpg"; // large banner image (replace if needed)
+import video from "../assets/v4-BTT1jpwy.mp4"; 
+import heroImg from "../assets/w.jpg"; 
 import img1 from "../assets/one.jpg";
 import img2 from "../assets/two.jpg";
 import img3 from "../assets/three.jpg";
@@ -39,7 +39,7 @@ export default function Us() {
             </Paragraph>
           </div>
         </div>
-        {/* FEATURES (alternating) */}
+        {/* FEATURES*/}
         <section className="features container">
           <Row gutter={[48, 48]} align="middle">
             <Col xs={24} md={10}>
@@ -53,7 +53,7 @@ export default function Us() {
               </Paragraph>
             </Col>
 
-            {/* reverse */}
+            
             <Col xs={24} md={14} className="mt-md">
               <Title level={3}>ETHICAL AND SUSTAINABLE SOURCING</Title>
               <Paragraph className="muted">
@@ -65,7 +65,7 @@ export default function Us() {
               <img src={img5} alt="fields" className="feature-img right" />
             </Col>
 
-            {/* another row */}
+            
             <Col xs={24} md={10}>
               <img src={img6} alt="harvest" className="feature-img left" />
             </Col>
@@ -78,7 +78,7 @@ export default function Us() {
             </Col>
           </Row>
         </section>
-        {/* SOFT PILLBOX SECTION */}
+        
         <section className="pill-section">
           <div className="container">
             <Title level={2} style={{ textAlign: "center", marginBottom: 32 }}>VERSATILE USES</Title>
@@ -96,7 +96,7 @@ export default function Us() {
             </Row>
           </div>
         </section>
-         {/* WIDE HERO BANNER */}
+         
         <section className="wide-banner" style={{ backgroundImage: `url(${heroImg})` }}>
           <div className="banner-overlay">
             <Title style={{ color: "#fff", fontSize: 42, marginBottom: 8 }}>ELEVATE YOUR EXPERIENCE</Title>

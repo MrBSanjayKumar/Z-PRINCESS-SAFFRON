@@ -1,25 +1,23 @@
-/* Products.css - product page and gallery */
 
-/* overall page padding */
 .product-page {
   padding: 28px;
   font-family: Inter, "Helvetica Neue", Arial, sans-serif;
   color: #222;
 }
 
-/* LEFT hero image */
+
 .product-hero {
   width: 100%;
-  height: 72vh;           /* visible area for the hero image */
+  height: 72vh;          
   display: flex;
   align-items: center;
   justify-content: center;
   background: #f6f0f6;
   border-radius: 6px;
-  overflow: hidden;       /* important so object-fit cropping is clean */
+  overflow: hidden;       
 }
 
-/* AntD Image is styled inline; add fallback class */
+
 .product-image {
   width: 100% !important;
   height: 72vh !important;
@@ -27,7 +25,7 @@
   display: block;
 }
 
-/* thumbnails row */
+
 .thumbs-row {
   display: flex;
   gap: 12px;
@@ -36,7 +34,7 @@
   flex-wrap: wrap;
 }
 
-/* single thumbnail */
+
 .thumb {
   width: 120px;
   height: 88px;
@@ -58,7 +56,7 @@
   display: block;
 }
 
-/* active thumbnail highlight */
+
 .thumb-active {
   transform: translateY(-4px);
   border-color: rgba(0,0,0,0.12);
@@ -76,10 +74,10 @@
   position: relative;
 }
 
-/* Info box (sticky on desktop) */
+/* Info box */
 .product-info {
   position: sticky;
-  top: 96px; /* adjust to keep below navbar */
+  top: 96px; 
   background: #fff;
   padding: 28px 18px;
   border-radius: 10px;
@@ -151,9 +149,6 @@
   margin-bottom: 8px;
 }
 
-/* Cart & weight UI styles */
-
-/* weight buttons */
 .weight-options {
   display: flex;
   gap: 10px;
@@ -180,13 +175,11 @@
   border-color: rgba(0,0,0,0.14);
 }
 
-/* small spacing for product links in right panel */
 .product-links a {
   display: block;
   margin-bottom: 8px;
 }
 
-/* ensure drawer list items have some separation */
 .ant-list-item {
   padding-left: 0px;
   padding-right: 0px;

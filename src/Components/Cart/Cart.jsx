@@ -1,9 +1,9 @@
-// src/pages/CartPage.jsx
+
 import React, { useEffect, useState } from "react";
 import { Row, Col, Image, Button, Typography, message } from "antd";
 import { DeleteOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
-import "./cart.css"; // keep your existing CSS file
+import "./cart.css";
 import Foot from "../Footer/Footer";
 
 const { Title, Text } = Typography;
@@ -29,7 +29,7 @@ export default function Cart() {
     } catch (e) {
       console.error("Failed to save cart", e);
     }
-    // notify navbar (same-tab) and other tabs (via storage event)
+    // storage event
     window.dispatchEvent(new Event("cartUpdated"));
   };
 
@@ -57,7 +57,7 @@ export default function Cart() {
       message.info("Your cart is empty");
       return;
     }
-    // demo: clear and show success
+    // show success
     message.success("Checkout successful (demo)");
     clearCart();
   };
@@ -78,7 +78,7 @@ export default function Cart() {
         ) : (
           cart.map((item) => (
             <div className="cart-row" key={item.id}>
-              {/* left: image + title + meta */}
+              
               <div className="cart-left">
                 <Image
                   src={item.img}
@@ -100,7 +100,7 @@ export default function Cart() {
                 </div>
               </div>
 
-              {/* center: quantity controls */}
+              
               <div className="cart-center">
                 <div className="qty-controls">
                   <button
@@ -123,7 +123,7 @@ export default function Cart() {
                 </div>
               </div>
 
-              {/* right: price */}
+              
               <div className="cart-right">
                 <div className="cart-price">₹{(item.price * item.qty).toLocaleString()}</div>
               </div>
@@ -131,10 +131,10 @@ export default function Cart() {
           ))
         )}
 
-        {/* single horizontal rule */}
+        
         <div className="cart-line" />
 
-        {/* totals and actions row */}
+        
         <div className="cart-summary-row">
           <div className="summary-left">
             <Text strong>Total items:</Text>
@@ -158,7 +158,7 @@ export default function Cart() {
         </div>
       </div>
 
-      {/* footer spacing (your site footer will follow) */}
+      
     </div>
     <Foot/>
     </>

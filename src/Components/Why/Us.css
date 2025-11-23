@@ -1,13 +1,11 @@
-/* src/pages/Us.css */
 
-/* container helper */
 .container {
   max-width: 1180px;
   margin: 0 auto;
   padding: 48px 20px;
 }
 
-/* hero/video styles (your existing styles reused) */
+
 .page-root { min-height: 100vh; }
 
 .home {
@@ -45,7 +43,7 @@
   padding: 24px;
 }
 
-/* pill-section (soft rounded background area) */
+
 .pill-section {
   background: linear-gradient(180deg, #fff7f0 0%, #fff8f3 100%);
   padding: 48px 0;
@@ -78,7 +76,7 @@
   margin-top: 8px;
 }
 
-/* wide banner with big background image */
+
 .wide-banner {
   background-size: cover;
   background-position: center;
@@ -106,7 +104,7 @@
   color: #fff;
 }
 
-/* features section */
+
 .features {
   padding: 36px 20px 80px;
 }

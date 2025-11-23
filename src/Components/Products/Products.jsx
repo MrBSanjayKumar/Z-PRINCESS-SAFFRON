@@ -1,4 +1,3 @@
-// ProductPageWithCart.jsx
 import React, { useState, useEffect } from "react";
 import {
   Row,
@@ -22,10 +21,6 @@ import img3 from "../assets/r.jpg";
 import Foot from "../Footer/Footer.jsx";
 const { Title, Text, Paragraph } = Typography;
 
-/*
-  NOTE: product image path from your project session used as item image.
-  You can replace with imports if you prefer.
-*/
 const defaultImages = [
   img1,
     img2,
@@ -59,8 +54,6 @@ export default function ProductPageWithCart() {
     }
   }, []);
 
-  // helper: persist cart
-  // inside ProductPageWithCart.jsx (replace your old persistCart)
 const persistCart = (nextCart) => {
   setCart(nextCart);
   try {
@@ -69,21 +62,20 @@ const persistCart = (nextCart) => {
     console.error("Failed to save cart", e);
   }
 
-  // notify other parts of the app in the same tab
   window.dispatchEvent(new Event("cartUpdated"));
 };
 
 
-  // compute totals
+  
   const itemCount = cart.reduce((s, it) => s + it.qty, 0);
   const totalPrice = cart.reduce((s, it) => s + it.qty * it.price, 0);
 
   // add to cart
   const addToCart = (qty = 1) => {
-    const sku = `${selected}-${selectedWeight}`; // simple unique key for product variant
+    const sku = `${selected}-${selectedWeight}`; 
     const product = {
       id: sku,
-      productId: "spain-saffron", // product id
+      productId: "spain-saffron", 
       title: "Spain Saffron",
       weight: selectedWeight,
       price: PRICE_MAP[selectedWeight],
@@ -119,7 +111,7 @@ const persistCart = (nextCart) => {
     persistCart(next);
   };
 
-  // quick buy (add then open drawer)
+  // quick buy
   const handleAddAndOpen = () => {
     addToCart(1);
     setDrawerOpen(true);
@@ -191,7 +183,6 @@ const persistCart = (nextCart) => {
           </section>
         </Col>
 
-        {/* RIGHT */}
         <Col xs={24} lg={8} className="product-right">
           <div className="product-info">
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
@@ -201,17 +192,9 @@ const persistCart = (nextCart) => {
                 <div className="muted">(M.R.P incl. of all taxes)</div>
               </div>
 
-              {/* Cart badge button */}
-              {/* <Badge count={itemCount} overflowCount={99}>
-                <Button
-                  type="text"
-                  icon={<ShoppingCartOutlined style={{ fontSize: 20 }} />}
-                  onClick={() => setDrawerOpen(true)}
-                />
-              </Badge> */}
             </div>
 
-            {/* Weight radio buttons */}
+            
             <div className="product-weight" style={{ marginTop: 16 }}>
               <Text strong style={{ display: "block", marginBottom: 8 }}>Select Weight:</Text>
               <div className="weight-options">

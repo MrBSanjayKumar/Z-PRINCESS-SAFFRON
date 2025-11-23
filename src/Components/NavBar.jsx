@@ -27,14 +27,14 @@ export default function Navbar() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // When other tabs change localStorage
+    // hange localStorage
     const onStorage = (ev) => {
       if (ev.key === LOCAL_KEY) {
         setCartCount(getCartCountFromStorage());
       }
     };
 
-    // When same-tab code dispatches cartUpdated
+    //dispatches cartUpdated
     const onCartUpdated = () => {
       setCartCount(getCartCountFromStorage());
     };

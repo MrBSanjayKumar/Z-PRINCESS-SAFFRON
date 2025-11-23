@@ -61,7 +61,7 @@
 
 .nav-icon {
   font-size: 20px;
-  cursor: pointer;        /* Make it obvious they are clickable */
+  cursor: pointer;        
   color: white;
   transition: transform .12s ease, opacity .12s;
 }
@@ -71,7 +71,7 @@
   opacity: 0.9;
 }
 
-/* make logo clickable */
+
 .navbar-logo {
   cursor: pointer;
   user-select: none;

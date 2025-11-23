@@ -12,11 +12,11 @@
 @media (max-width: 480px) {
   .hero-title {
     font-size: 20px !important; 
-     /* change size as you like */
+     
   }
   .hero1-title {
     font-size: 40px !important; 
-     /* change size as you like */
+     
   }
 }
 
@@ -65,7 +65,6 @@
 
 .home1 {
     background-image: url("../Components/assets/mohammad-amiri-L8B7-OAuP2k-unsplash.jpg");
-    /* -webkit-mask:linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 20%);   */
     backdrop-filter: blur(10px);
     height: 100vh;
     background-position: center;
@@ -98,20 +97,20 @@
 
 }
 
-/* container helper */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 24px;
 }
 
-/* wrapper: optionally show the uploaded image as a faint background */
+
 .two-sections-wrapper {
-  --accent-color: #231b2b; /* dark text color */
-  --muted-color: #f6e9f3;  /* light pink background used in screenshot */
+  --accent-color: #231b2b; 
+  --muted-color: #f6e9f3;  
 }
 
-/* Services area: big airy pink area */
+
 .services-section {
   background: var(--muted-color);
   padding: 70px 0;
@@ -153,34 +152,34 @@
   margin-top: 12px;
 }
 
-/* Newsletter section uses the uploaded image as a subtle background in the center area */
+
 .newsletter-section {
-  /* use local image as background (your uploaded image path) */
+  
   background-image: url("/mnt/data/Vite + React - Google Chrome 23-11-2025 21_02_57.png");
   background-size: cover;
   background-position: center;
   padding: 90px 0;
   position: relative;
-  /* overlay to match pale look */
+  
   color: #111;
 }
 
-/* add a translucent overlay over the background to soften it */
+
 .newsletter-section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 238, 245, 0.9); /* pale pink overlay */
+  background: rgba(255, 238, 245, 0.9); 
   pointer-events: none;
 }
 
-/* content inside newsletter must be above overlay */
+
 .newsletter-section .container {
   position: relative;
   z-index: 2;
 }
 
-/* newsletter heading style */
+
 .newsletter-heading {
   font-size: 46px;
   font-weight: 300;
@@ -190,7 +189,7 @@
   margin-bottom: 30px;
 }
 
-/* form style: center horizontally */
+/* center horizontally */
 .subscribe-form {
   display: flex;
   justify-content: center;
@@ -218,10 +217,10 @@
   padding: 10px 24px;
   height: 46px;
   border-radius: 2px;
-  margin-left: -6px; /* slightly overlap the input like in screenshot */
+  margin-left: -6px; 
 }
 
-/* responsive tweaks */
+/* responsive*/
 @media (max-width: 768px) {
   .section-heading { font-size: 28px; }
   .newsletter-heading { font-size: 26px; }
@@ -246,9 +245,6 @@
   color: #231b2b;
 }
 
-/* --------------------- */
-/*  SERVICES SECTION     */
-/* --------------------- */
 
 .services-section {
   background: #f6e9f3;
@@ -286,12 +282,10 @@
   margin: 0 auto;
 }
 
-/* --------------------- */
-/*  NEWSLETTER SECTION   */
-/* --------------------- */
+
 
 .newsletter-section {
-  background: #fbeff8; /* light pink */
+  background: #fbeff8; 
   padding: 70px 20px;
   text-align: center;
 }

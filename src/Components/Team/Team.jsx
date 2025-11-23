@@ -1,10 +1,9 @@
 import NavBar from "../NavBar.jsx";
 import { Typography, Button, Card } from "antd";
-// import "./Home.css";
 import video from "../assets/insightvideo-QZD8qk3w.mp4";
 import { Row, Col, Form, Input } from "antd";
 import Foot from "../Footer/Footer.jsx";
-import "./Team.css"; // add this for 
+import "./Team.css";  
 import img1 from "../assets/a.jpg"
 import img2 from "../assets/benyamin-bohlouli--d3pDlYSmO0-unsplash.jpg"
 import img3 from "../assets/Master.jpg"
@@ -34,7 +33,7 @@ const Team = () => {
     <div className="page-root">
       <NavBar />
 
-      {/* HERO VIDEO SECTION */}
+      
       <div className="home">
         <video className="bg-video" src={video} autoPlay loop muted playsInline />
 
@@ -55,10 +54,10 @@ const Team = () => {
         </div>
       </div>
 
-      {/* MAIN INSIGHT SECTION */}
+      
       <section className="insight-wrapper">
 
-        {/* TOP TEXT BLOCK */}
+        
         <div className="insight-top container">
 
           <Title className="insight-heading">THE SECRETS OF THE CROCUS SATIVUS</Title>
@@ -96,7 +95,7 @@ const Team = () => {
           </div>
         </div>
 
-        {/* LOWER TEXT BLOCKS */}
+        
         <div className="insight-lower container">
           <Title level={3} className="lower-heading">
             QUALITY AND TRADITION
@@ -115,7 +114,6 @@ const Team = () => {
 
       </section>
 
-      {/* FOOTER */}
       <Foot />
     </div>
   );

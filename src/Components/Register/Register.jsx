@@ -1,4 +1,3 @@
-// Register.jsx
 import React from "react";
 import { Form, Input, Button, Typography, Avatar, message } from "antd";
 import { UserOutlined, MailOutlined, LockOutlined } from "@ant-design/icons";
@@ -14,17 +13,16 @@ export default function Register() {
 
   const onFinish = (values) => {
     console.log("Register values:", values);
-    // Replace with your API call. Demo success:
     message.success("Registered successfully (demo)");
     setTimeout(() => navigate("/login"), 700);
   };
 
   return (
     <div className="register-page">
-      {/* full-screen video */}
+      
       <video className="bg-video" src={video} autoPlay loop muted playsInline />
 
-      {/* overlay */}
+      
       <div className="register-overlay" />
 
       {/* card */}
