@@ -1,0 +1,201 @@
+/* Products.css - product page and gallery */
+
+/* overall page padding */
+.product-page {
+  padding: 28px;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+  color: #222;
+}
+
+/* LEFT hero image */
+.product-hero {
+  width: 100%;
+  height: 72vh;           /* visible area for the hero image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f0f6;
+  border-radius: 6px;
+  overflow: hidden;       /* important so object-fit cropping is clean */
+}
+
+/* AntD Image is styled inline; add fallback class */
+.product-image {
+  width: 100% !important;
+  height: 72vh !important;
+  object-fit: cover !important;
+  display: block;
+}
+
+/* thumbnails row */
+.thumbs-row {
+  display: flex;
+  gap: 12px;
+  margin: 18px 0 30px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* single thumbnail */
+.thumb {
+  width: 120px;
+  height: 88px;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform .14s ease, border-color .14s ease, box-shadow .14s;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* active thumbnail highlight */
+.thumb-active {
+  transform: translateY(-4px);
+  border-color: rgba(0,0,0,0.12);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.08);
+}
+
+/* sections spacing */
+.product-section {
+  padding: 48px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+/* RIGHT column card */
+.product-right {
+  position: relative;
+}
+
+/* Info box (sticky on desktop) */
+.product-info {
+  position: sticky;
+  top: 96px; /* adjust to keep below navbar */
+  background: #fff;
+  padding: 28px 18px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(20,20,20,0.06);
+  margin-bottom: 18px;
+}
+
+/* Info text */
+.product-title {
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.product-price {
+  display: block;
+  font-size: 20px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.muted { color: rgba(0,0,0,0.45); font-size: 12px; margin-top: 4px; }
+
+.product-meta { margin-top: 10px; display:flex; align-items:center; gap:12px; }
+
+.rating { display:flex; align-items:center; gap:6px; }
+
+.rating-count { color: rgba(0,0,0,0.6); font-size: 13px; margin-left: 6px; }
+
+/* Buttons */
+.btn-outline {
+  border-radius: 24px;
+  padding: 8px 20px;
+  border: 1px solid rgba(0,0,0,0.5);
+  background: transparent;
+}
+
+.btn-primary {
+  border-radius: 24px;
+  padding: 8px 20px;
+}
+
+/* small links */
+.product-links {
+  margin-top: 26px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.product-links a {
+  color: rgba(0,0,0,0.65);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.product-links a:hover { text-decoration: underline; }
+
+/* Anchor container */
+.product-anchor {
+  margin-top: 18px;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.02);
+}
+
+.product-anchor .anchor-title {
+  font-size: 12px;
+  color: rgba(0,0,0,0.6);
+  margin-bottom: 8px;
+}
+
+/* Cart & weight UI styles */
+
+/* weight buttons */
+.weight-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.weight-btn {
+  border: 1px solid rgba(0,0,0,0.12);
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all .12s ease;
+}
+
+.weight-btn:hover {
+  transform: translateY(-2px);
+}
+
+.weight-btn.active {
+  background: #111;
+  color: #fff;
+  border-color: rgba(0,0,0,0.14);
+}
+
+/* small spacing for product links in right panel */
+.product-links a {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* ensure drawer list items have some separation */
+.ant-list-item {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+
+/* responsive */
+@media (max-width: 991px) {
+  .product-hero { height: 48vh; }
+  .product-info { position: static; margin-bottom: 20px; }
+  .thumb { width: 28%; height: 80px; }
+}

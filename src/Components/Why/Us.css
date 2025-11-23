@@ -1,0 +1,133 @@
+/* src/pages/Us.css */
+
+/* container helper */
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+/* hero/video styles (your existing styles reused) */
+.page-root { min-height: 100vh; }
+
+.home {
+  position: relative;
+  height: calc(100vh - 64px);
+  margin-top: 64px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 1;
+}
+
+.home-content {
+  position: relative;
+  z-index: 2;
+  padding: 24px;
+}
+
+/* pill-section (soft rounded background area) */
+.pill-section {
+  background: linear-gradient(180deg, #fff7f0 0%, #fff8f3 100%);
+  padding: 48px 0;
+  border-radius: 24px;
+  margin: 30px 24px;
+}
+
+/* cards */
+.versatile-card {
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(18,18,18,0.06);
+  overflow: hidden;
+  border: none;
+}
+
+.versatile-card img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.vc-title {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.vc-sub {
+  font-size: 13px;
+  color: rgba(0,0,0,0.55);
+  margin-top: 8px;
+}
+
+/* wide banner with big background image */
+.wide-banner {
+  background-size: cover;
+  background-position: center;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 36px 0;
+}
+
+.wide-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  border-radius: 0;
+}
+
+.banner-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 48px 20px;
+  color: #fff;
+}
+
+/* features section */
+.features {
+  padding: 36px 20px 80px;
+}
+
+.feature-img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(18,18,18,0.06);
+  object-fit: cover;
+}
+
+.feature-img.left { margin-left: 48px; }
+.feature-img.right { margin-right: 48px; }
+
+.muted { color: rgba(0,0,0,0.6); line-height: 1.8; }
+
+/* responsive */
+@media (max-width: 992px) {
+  .home { height: 60vh; }
+  .vc-title { font-size: 15px; }
+  .feature-img.left, .feature-img.right { margin: 0; }
+  .pill-section { margin: 12px; padding: 28px 12px; }
+  .banner-overlay { padding: 28px 12px;}
+}

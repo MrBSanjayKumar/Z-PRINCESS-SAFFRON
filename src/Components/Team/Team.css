@@ -1,0 +1,118 @@
+/* simple container helper */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* wrapper */
+.insight-wrapper {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  color: #222;
+}
+
+/* top intro area */
+.insight-top {
+  padding: 28px 0 40px;
+  text-align: center;
+}
+
+.brand-small {
+  font-size: 13px;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.insight-heading {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.insight-sub {
+  margin: 0 auto;
+  max-width: 820px;
+  color: rgba(0,0,0,0.65);
+  line-height: 1.7;
+}
+
+/* pale green band that contains the cards (matches screenshot) */
+.insight-cards-band {
+  background: #bcdad6; /* pale aquamarine like screenshot */
+  padding: 30px 0 48px;
+}
+
+/* card */
+.insight-card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* image wrapper keeps fixed aspect and rounded corners */
+.card-image-wrapper {
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 6px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform-origin: center;
+}
+
+/* Card content below image */
+.card-content {
+  text-align: center;
+  padding: 6px 4px 0;
+}
+
+.card-title {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  margin: 12px 0 8px;
+  font-weight: 500;
+}
+
+.card-desc {
+  color: rgba(0,0,0,0.6);
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 0 8px 16px;
+}
+
+/* Lower text sections */
+.insight-lower {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.lower-heading {
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.lower-text {
+  color: rgba(0,0,0,0.6);
+  max-width: 760px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .card-image-wrapper { height: 160px; }
+  .insight-heading { font-size: 22px; }
+  .lower-heading { font-size: 20px; }
+  .insight-cards-band { padding: 20px 0 34px; }
+}

@@ -1,0 +1,129 @@
+/* Login.css - glass card over video background */
+
+:root {
+  --card-width: 420px;
+  --glass-bg: rgba(255,255,255,0.12);
+  --card-radius: 14px;
+}
+
+/* full viewport */
+.login-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* background video covering full screen */
+.login-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* overlay to improve text contrast */
+.login-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.48);
+  z-index: 1;
+}
+
+/* card centered above video + overlay */
+.login-card {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: var(--card-width);
+  padding: 34px 28px;
+  border-radius: var(--card-radius);
+  text-align: center;
+
+  /* glass look */
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px) saturate(120%);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+/* avatar */
+.login-avatar {
+  margin: -60px auto 10px; /* pulled up a bit for a centered stacked look */
+  background: rgba(255,255,255,0.95);
+  color: #111;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.45);
+}
+
+/* title */
+.login-title {
+  color: #fff;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+/* form labels and inputs */
+.login-form label {
+  color: rgba(255,255,255,0.95) !important;
+  font-weight: 500;
+}
+
+.login-form .ant-input,
+.login-form .ant-input-affix-wrapper,
+.login-form .ant-input-password {
+  background: rgba(255,255,255,0.06) !important;
+  border: 1px solid rgba(255,255,255,0.12) !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+}
+
+.login-form .ant-input::placeholder {
+  color: rgba(255,255,255,0.6) !important;
+}
+
+/* checkbox and links */
+.login-form .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #fff !important;
+  border-color: #fff !important;
+}
+.login-links {
+  margin-top: 8px;
+  color: rgba(255,255,255,0.9);
+}
+.login-links a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+}
+.login-links a:hover {
+  text-decoration: underline;
+}
+
+/* button */
+.login-form .ant-btn-primary {
+  background: #111;
+  border-color: rgba(255,255,255,0.08);
+  height: 44px;
+  font-weight: 600;
+}
+
+/* responsive tweaks */
+@media (max-width: 480px) {
+  .login-card {
+    margin: 20px;
+    padding: 22px;
+    border-radius: 12px;
+  }
+  .login-avatar {
+    width: 68px;
+    height: 68px;
+    margin-top: -48px;
+  }
+}
